@@ -7,14 +7,14 @@ $(document).on("click","#bt3",function(){
            if(result.text == 280720550){
               $(location).attr("href", "ipad.html")        
            }   
-            if(result.text == 989895555){
+            else if(result.text == 989895555){
               $(location).attr("href","samsung.html")     
            }   
-           if(result.text == 85236987){
+           else if(result.text == 85236987){
               $(location).attr("href","motorola.html")       
            }   
 
-           if(result.text == 85369877444){
+           else if(result.text == 85369877444){
               $(location).attr("href","asus.html")       
            } 
            else{
