@@ -5,22 +5,22 @@ $(document).on("click","#bt3",function(){
    cordova.plugins.barcodeScanner.scan(
        function ( result) {
            if(result.text == 280720550){
-              $(location).attr("href", "https://www.apple.com/br/shop/buy-ipad/ipad-mini/64gb-cinza-espacial-wifi")        
+              $(location).attr("href", "ipad.html")        
            }   
-            if(result.text == 989895555){
-              $(location).attr("href","https://www.buscape.com.br/smartphone-samsung-galaxy-j8-sm-j810-64gb")     
+            else if(result.text == 989895555){
+              $(location).attr("href","samsung.html")     
            }   
-           if(result.text == 85236987){
-              $(location).attr("href","https://www.buscape.com.br/smartphone-motorola-one-xt1941-64gb")       
+           else if(result.text == 85236987){
+              $(location).attr("href","motorola.html")       
            }   
 
-           if(result.text == 85369877444){
-              $(location).attr("href","https://loja.asus.com.br/asus-zenfone-max-pro-m1-4gb-64gb-azul-ag-1-4-1005651")       
+           else if(result.text == 85369877444){
+              $(location).attr("href","asus.html")       
            } 
            else{
              function novamente(){
              }
-              navigator.notification.alert("Erro !! Codigo nao encontrado !!");
+              navigator.notification.alert("Erro! Codigo não encontrado !!!");
            }                                                           
        },
                                                   
@@ -45,6 +45,25 @@ $(document).on("click","#bt3",function(){
        }
     ); 
 })
+$(document).on('click','#btn1', function(){
+ location.href = "ipad.html";
+});
+
+$(document).on('click','#btn2', function(){
+ location.href = "samsung.html";
+});
+
+$(document).on('click','#btn3', function(){
+ location.href = "motorola.html";
+});
+
+$(document).on('click','#btn4', function(){
+ location.href = "asus.html";
+});
+
+$(document).on('click','#voltar', function(){
+ location.href = "index.html";
+});
 
 
 

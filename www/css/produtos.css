@@ -1,0 +1,12 @@
+/* This is a CSS file */
+body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background:rgb(255, 255, 255);
+  min-height: 10px;
+}
+hr{
+ color: #000;
+ background-color: #000;
+ height: 3px;
+}
