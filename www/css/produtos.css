@@ -1,0 +1,10 @@
+/* This is a CSS file */
+body{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background:rgb(0, 217, 255);
+  min-height: 10px;
+}
+hr{
+
+}
